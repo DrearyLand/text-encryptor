@@ -1,0 +1,139 @@
+:root {
+    --black: #000000;
+    --withe: #FFFFFF;
+    --dark-blue-300: #0A3871;
+    --dark-blue-500: #072B61;
+    --gray: #495057;
+    --bg-color: #F3F5FC;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail svg {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+    width: 45%;
+    height: 48px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 0;
+}
+
+/* ENCRYPT INPUT STYLES */
+main #sec-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+main #sec-input #logo {
+    width: 40px;
+    height: 40px;
+}
+
+main #sec-input #encrypt-section {
+    padding: 30px;
+}
+
+main #sec-input #encrypt-section textarea {
+    color: var(--dark-blue-300);
+    background-color: var(--bg-color);
+    resize: none;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    outline: none;
+    font-size: 22px;
+    border: none;
+}
+
+main #sec-input #encrypt-section textarea::placeholder {
+    color: var(--dark-blue-300);
+}
+
+main #sec-input #encrypt-section p {
+    color: var(--gray);
+    font-size: 12px;
+    padding: 2px 0 16px 0;
+}
+
+main #sec-input #encrypt-section .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #sec-input #encrypt-section .buttons #btn-encrypt {
+    color: var(--bg-color) !important;
+    background-color: var(--dark-blue-300) !important;
+}
+
+main #sec-input #encrypt-section .buttons #btn-decrypt {
+    color: var(--dark-blue-300) !important;
+    background-color: var(--bg-color) !important;
+    border-color: var(--dark-blue-300);
+}
+
+/* --------------------------- */
+
+/* DECRYPT OUTPUT STYLES */
+main #sec-output {
+    width: 35%;
+    background-color: var(--withe);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.05);
+}
+
+main #sec-output #noMessageFound #thumbnail {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main #sec-output #noMessageFound p {
+    color: var(--gray);
+    text-align: center;
+    font-size: 12px;
+}
+
+main #sec-output #noMessageFound p span {
+    color: var(--black);
+    font-size: 16px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+main #sec-output #btn-copy {
+    width: 100%;
+    display: block;
+    background-color: var(--withe);
+}
